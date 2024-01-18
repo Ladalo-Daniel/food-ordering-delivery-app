@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function Navbar() {
   const user = false
   return (
-    <div className=' h-14 md:h-16 text-gray-900 p-4 flex items-center justify-between border-b-2 border-b-slate-950 lg:px-20 xl:px-40'>
+    <div className=' h-14 md:h-16 text-gray-100 p-4 flex items-center justify-between border-b-2 border-b-slate-950 lg:px-20 xl:px-40 top-0 sticky z-50 bg-black'>
          {/* LEFTLINKS */}
         <div className=' hidden md:flex gap-4 flex-1 uppercase'>
           <Link href="/">Home</Link>
@@ -16,7 +16,7 @@ export default function Navbar() {
           <Link href="/">Contact</Link>
         </div>
         {/* LOGO */}
-        <div className=' text-xl text-zinc-950  md:font-bold  flex-1 md:text-center '>
+        <div className=' text-xl text-zinc-100  md:font-bold  flex-1 md:text-center '>
           <Link href="/">eFood </Link>
         </div>
 

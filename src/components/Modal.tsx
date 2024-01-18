@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 
-export default () => {
+export default function Modal() {
 
     const  [modal, setModal] = useState(true)
 

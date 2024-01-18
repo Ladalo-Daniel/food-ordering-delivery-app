@@ -9,7 +9,7 @@ export default function LoginPage() {
                <h1 className=' font-bold text-black'>Welcome to eFood</h1>
                 <div className="mt-5 space-y-2">
                     <h3 className="text-gray-800 text-2xl font-bold sm:text-3xl">Log in to your account</h3>
-                    <p className="">Don't have an account? <a href="javascript:void(0)" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a></p>
+                    <p className="">Don&apos;t have an account? <a href="javascript:void(0)" className="font-medium text-indigo-600 hover:text-indigo-500">Sign up</a></p>
                 </div>
             </div>
             <div className="bg-white shadow p-4 py-6 space-y-8 sm:p-6 sm:rounded-lg">

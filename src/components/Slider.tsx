@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import Reveal from './Reveal';
 
 const data = [
   {

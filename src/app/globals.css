@@ -6,3 +6,31 @@
 body {
     background-color: #ebebeb;
 }
+
+
+.testimonial-slider {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    animation: slide-infinite 15s linear infinite;
+  }
+
+  .testimonial-card {
+    transition: transform 0.5s ease;
+  }
+
+  @keyframes slide-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    33.33% {
+      transform: translateX(-100%);
+    }
+    66.66% {
+      transform: translateX(-200%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }

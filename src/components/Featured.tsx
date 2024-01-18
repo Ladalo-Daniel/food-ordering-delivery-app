@@ -1,11 +1,15 @@
+"use client"
+
 import { featuredProducts } from '@/data'
 import Image from 'next/image'
 import React from 'react'
+import Reveal from './Reveal'
 
 export default function Featured() {
   return (
     <div className=' w-screen, overflow-x-scroll text-fuchsia-600'>
       {/* Container WRAPPER */}
+      <Reveal>
       <div className=' w-max flex'>
         {/* SINGLE ITEM WRapper */}
         {featuredProducts.map((item) => (
@@ -26,6 +30,7 @@ export default function Featured() {
         </div>
         ))}
       </div>
+      </Reveal>
     </div>
   )
 }
