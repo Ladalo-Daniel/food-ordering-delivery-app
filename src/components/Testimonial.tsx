@@ -7,19 +7,19 @@ export default function Testimonial() {
 
     const testimonials = [
         {
-            avatar: "https://api.uifaces.co/our-content/donated/xZ4wg2Xj.jpg",
+            avatar: "/slide1.png",
             name: "Martin escobar",
             title: "Founder of meta",
             quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae."
         },
         {
-            avatar: "https://randomuser.me/api/portraits/men/46.jpg",
+            avatar: "/slide1.png",
             name: "Simon andrew",
             title: "Software engineer",
             quote: "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
         },
         {
-            avatar: "https://randomuser.me/api/portraits/men/86.jpg",
+            avatar: "/slide1.png",
             name: "Micheal worin",
             title: "Product designer",
             quote: "There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain."
@@ -29,16 +29,18 @@ export default function Testimonial() {
     return (
         <section className="relative py-14">
             <div className="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
-                <Reveal>
                 <div className="max-w-xl sm:text-center md:mx-auto">
-                    <h3 className="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    <Reveal>
+                    <h3 className="text-gray-800 text-3xl text-center font-semibold sm:text-4xl">
                         Hear from our customers
                     </h3>
+                    </Reveal>
+                    <Reveal>
                     <p className="mt-3 text-gray-600">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et est hendrerit, porta nunc vitae, gravida justo. Nunc fermentum magna lorem, euismod volutpat arcu volutpat et.
                     </p>
+                    </Reveal>
                 </div>
-                </Reveal>
                 <div className="mt-12">
                     <ul className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {
