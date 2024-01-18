@@ -34,3 +34,32 @@ body {
       transform: translateX(0);
     }
   }
+
+
+
+   /* NOTIFICATION MARQUE */
+   
+  .notification {
+    height: 12px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
