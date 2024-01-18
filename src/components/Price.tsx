@@ -4,9 +4,12 @@
 import { useState, useEffect } from "react";
 
 type Props = {
-    price:number;
-    id:number;
-    options?: {title: string; additionalPrice: number}
+    price: number;
+    id: number;
+    options?: Array<{
+        title: string;
+        additionalPrice: number;
+    }> | undefined;
 }
 
 export default function Price({ price, id, options }: Props) {
@@ -24,7 +27,7 @@ export default function Price({ price, id, options }: Props) {
         <h1 className=' text-2xl font-bold text-orange-700'>${total.toFixed(2)}</h1>
         {/* OPTIONS CONTAINER */}
         <div className=' flex gap-4'>
-            {options.map((option, index) => (
+            {options?.map((option, index) => (
                 <button key={option.title} className=' text-zinc-900 p-2 ring-1 ring-black rounded-md '
                 style={{
                     background: selected === index ? "rgb(24 24 27)" : "white",

@@ -19,7 +19,7 @@ export default function Reveal({ children, width = "fit-content" }: Props) {
             mainControls.start("visible");
             slideControls.start("visible");
         }
-    }, [isInview]);
+    }, [isInview, mainControls, slideControls]);
   return (
     <div ref={ref} style={{ position: "relative", width, overflow: "hidden"}}>
         <motion.div
