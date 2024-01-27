@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function LoginPage() {
   return (
-    <main className="w-full h-screen flex flex-col items-center justify-center sm:px-4">
+    <main className="w-full h-full mt-[5%] mb-[5%] flex flex-col items-center justify-center sm:px-4">
         <div className="w-full space-y-6 text-gray-600 sm:max-w-md bg-white ring-1 ring-black p-4 shadow-2xl">
             <div className="text-center">
                <h1 className=' font-bold text-black'>Welcome to eFood</h1>

@@ -40,7 +40,7 @@ export default function Slider() {
         <h1 className=' text-center text-lg md:text-5xl uppercase p-4 font-normal md:p-10'>
           {data[currentSlide].title}
         </h1>
-        <button className=' bg-orange-700 rounded-xl p-2 text-white md:p-3'>Order Now</button>
+        <button className=' bg-black rounded-xl p-2 text-white md:p-3'>Order Now</button>
       </div>
       {/* TEXTCONTAINER */}
       <div className=' w-full flex-1 relative lg:h-full'>

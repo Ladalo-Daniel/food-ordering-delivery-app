@@ -7,7 +7,7 @@ import Reveal from './Reveal'
 
 export default function Featured() {
   return (
-    <div className=' w-screen, overflow-x-scroll text-fuchsia-600'>
+    <div className=' w-screen, overflow-x-scroll text-black'>
       {/* Container WRAPPER */}
       <Reveal>
       <div className=' w-max flex'>
@@ -25,7 +25,7 @@ export default function Featured() {
             <h1 className=' text-sm md:text-xl font-bold uppercase'>{item.title}</h1>
             <p className=' p-2 text-center'>{item.desc}</p>
             <span className=' text-lg font-bold'>${item.price}</span>
-            <button className=' bg-fuchsia-800 rounded-md text-fuchsia-50 font-bold px-4 py-1'>Add to Cart</button>
+            <button className=' bg-black rounded-md text-fuchsia-50 font-bold px-4 py-1'>Add to Cart</button>
           </div>
         </div>
         ))}
